@@ -78,7 +78,7 @@ The development mode uses `nodemon` to watch for changes in the code and restart
 
 ## Usage
 
-Open multiple tabs in your browser and navigate to `localhost:4000`. Enter your desired username (by default, the username is `anonymous`). Send messages to other users in the chatroom. You can also see the typing indicator when other users are typing.
+Open multiple tabs in your browser and navigate to `localhost:4000`. Enter your desired username (by default, the username is `anonymous`). Send messages to other users in the chatroom. You can also see the typing indicator when other users are typing. Alternatively, visit [this](https://github-conversations.herokuapp.com/) website to try it out!
 
 ## Images
 
