@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="icon.png" type="image/png" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversations</title>
+</head>
+
+<body>
+    <h1 class="title">Conversations <img src="./icon.png"></h1>
+    <div class="main">
+        <div class="name">
+            <span><img src="./user.png"></span>
+            <input type=" text" name="name-input" id="name-input" value="anonymous" class="name-input" maxlength="20">
+        </div>
+        <ul class="message-container" id="message-container">
+            <!-- Boilerplate message container-->
+            <!-- <li class="message-left">
+                <p class="message">
+                    Lorem, ipsum.
+                    <span>bluebird ⚪ 26 July 10:40</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    Lorem, ipsum.
+                    <span>bluebird ⚪ 26 July 10:40</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    ✒️bluebird is typing...
+                </p>
+            </li> -->
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="v-divider"></div>
+            <button type="submit" class="send-btn">send <img src="./send.png" alt="" style="height:18px"></button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">
+        <!--Boilerplate client count-->
+        <!-- Total clients: 2 -->
+    </h3>
+
+    <footer style="margin-top:20px">
+        <p class="footer-text">Made with ❤️ by <span style="text-decoration:none; color:#0081a7">Udatta
+                Mukherjee</span></p>
+        <div class="socials">
+            <a href="https://github.com/udattam"><img src="./github.png" alt="gi" class="social-icon"></a>
+            <a href="https://www.linkedin.com/in/udattam/"><img src="./linkedin.png"></a>
+            <a href="https://twitter.com/udattatweets"><img src="./twitter.png"></a>
+        </div>
+    </footer>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+        integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
